@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const selectors = document.querySelectorAll('.view-selector__item');
             selectors.forEach(selector =>
-                selector.addEventListener('click', function () {
+                selector.addEventListener('click', () => {
                     selectors.forEach(sel => sel.classList.remove('view-selector__item--active'));
                     selector.classList.add('view-selector__item--active');
 
